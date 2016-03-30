@@ -1,0 +1,33 @@
+body
+   {
+     color:blue;
+      background-repeat: no-repeat;
+    background-image:url(https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTmz3EeM9BkQDqqu8efbyg6VdWnIP-96SH226fbphRe51prJ0Bm);
+     background-position: top;
+        background-size: 30%;
+      background-color:#00FFFF;
+
+   }
+strong
+    {	
+	font-size: 40px;
+    }
+#sree{
+	
+	float:left;
+	
+	height: 600px;
+        width: 600px;
+    }
+#reddy{
+	float:right;
+    
+     
+     
+     height: 400px;
+      width: 600px;
+}
+input
+{
+float:right;
+}
