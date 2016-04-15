@@ -1,46 +1,49 @@
 <html>
-<body>
-<table   align="center" table border="2">
+<body id="bodyE">
+<script>
+	// !. Deifne Model
+	// 2. Prepare a employee list DOM
+	var employeeList = [
+	 	{
+	 		id: 1,
+	 		name: "surya"
+	 	},
+	 	{
+	 		id: 2,
+	 		name: "sowmya"
+	 	},
+	 	{
+	 		id: 3,
+	 		name: "sreekanth"
+	 	},
+	 	{
+	 		id: 4,
+	 		name: "raveendra"
+	 	},
+	 	{
+	 		id: 5,
+	 		name: "Naidu"
+	 	}
+	];
+	var tableE = document.createElement("table");
+	tableE.align = "center";
 
-<tr>
-<th>s.no</th>
-<th>empname</th>
-</tr>
 
-<tr>
-<td>1</td>
-<td align="center"><a href="sowmya.html" target="a">sowmya</a></td>
-</tr>
-
-<tr>
-<td>2</td>
-<td align="center"><a href="surya.html" target="a">surya</a></td>
-</tr>
-
-<tr>
-<td>3</td>
-<td align="center"><a href="sreekanth.html" target="a">srekanth</a></td>
-</tr>
-
-<tr>
-<td>4</td>
-<td align="center"><a href="vinay.html" target="a">vinay</a></td>
-</tr>
-
-<tr>
-<td>5</td>
-<td align="center"><a href="raveendra.html" target="a">raveendra</a></td>
-</tr>
-
-<tr>
-<td>6</td>
-<td align="center"><a href="kalpana.html" target="a">kalpana</a></td>
-</tr>
-
-<tr>
-<td>7</td>
-<td align="center"><a href="kspreddy.html" target="a">kspreddy</a></td>
-</tr>
-</table>
+	for ( i = 0; i < employeeList.length; i++) {
+		oEmployee = employeeList[i];
+		console.log(oEmployee);
+		rowE = document.createElement("tr");
+		idE = document.createElement("td");
+		idE.innerHTML = ""+oEmployee.id;
+		nameE = document.createElement("td");
+		nameE.innerHTML = oEmployee.name;
+		rowE.appendChild(idE);
+		rowE.appendChild(nameE);
+		tableE.appendChild(rowE);
+	}
+   
+	bodyE = document.getElementById("bodyE");
+	bodyE.appendChild(tableE);
+</script>
 </body>
 </html>
