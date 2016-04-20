@@ -1,0 +1,27 @@
+<html>
+<head>
+	<title>login</title>
+</head>
+<body>
+	<script>
+		function login () {
+			location.href="employeeList.html";
+		}
+		function reset () {
+			location.href="employeelogin.html";
+		}
+	</script>
+	
+
+
+ <table   align="center">
+		<tr><td colspan="2" align="center"><strong>LOGIN</strong></td></tr>
+		<tr><td>enter username:</td><td><input type="text" name="uid" id="uid"></td></tr>
+		<tr><td>enter  password:</td><td><input type="password" name="pswd"</td></tr>
+		<td align="center"><input type="button" value="submit" onclick="login()"/></td>
+		
+		<td align="center"><input type="button" value="reset" onclick="reset()"/></td>
+	</table>
+
+</body>
+</html>
