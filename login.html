@@ -1,0 +1,52 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="emlogin.css">
+	<title>login</title>
+</head>
+<body>
+	<script>
+		function login () {
+			
+			location.href="emplist.html";
+		}
+		function reset () {
+			
+			location.href="login.html";
+		}
+                function create() {
+			
+			location.href="login successful.html";
+		}
+
+
+	</script>
+	<div id="sree">
+	<table   align="center">
+		<tr><td colspan="2" align="center"><strong>LOGIN</strong></td></tr><br><br><br><br><br><br><br>
+		<tr><td> Username:</td><td><input type="text" name="uid" id="uid"></td></tr>
+		<tr><td> Password:</td><td><input type="password" name="pswd"</td></tr><br>
+		<td><input type="reset" value="reset" onclick="reset()"/><input type="submit" value="login" onclick="login()" />
+
+		</td>
+	</table>
+        </div>
+
+
+   <div id="reddy">
+	<table   align="center">
+		<tr><td colspan="2" align="center"><strong>Sign Up</strong></td></tr><br><br><br><br><br><br>
+		<tr><td> Username:</td><td><input type="text" name="uid" id="uid"></td></tr>
+		<tr><td> Mail Id:</td><td><input type="text" name="uid"</td></tr><br>
+                <tr><td> password:</td><td><input type="password" name="pswd" ></td></tr>
+		<tr><td> Confirm Password:</td><td><input type="password" name="pswd"</td></tr>
+		<td><input type="submit" value="login" onclick="create()" /><input type="reset" value="reset" onclick="reset()"/>
+
+		</td>
+	</table>
+</div>
+
+
+
+	
+</body>
+</html>
