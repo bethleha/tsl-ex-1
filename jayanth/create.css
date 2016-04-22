@@ -1,0 +1,17 @@
+body
+{
+background-color:#b7d3e3;
+}
+p
+{
+
+color:black;
+font-size:100px;
+}
+input
+{
+height:50px;
+width:150px;
+font-size:30px;
+float:right;
+}

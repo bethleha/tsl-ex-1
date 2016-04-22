@@ -1,0 +1,129 @@
+<html>
+<head>
+<title> Employee details </title>
+</head>
+<body>
+
+
+	<script>
+
+		
+	<table id="empinfo" border="1">
+		<tr>
+			<th>id</th>
+			<th>name</th>
+			<th>salary</th>
+			<th>designation</th>
+			<th>address</th>
+			<th>mobile</th>
+		</tr>	
+
+
+		var employeeList=[
+			{
+				id:1,
+				name:"jayanth",
+				salary:"20k",
+				designation:"developer",
+				address:"banglore",
+				mobile:"9731610834"
+				
+			},			
+			{
+				id:2,
+				name:"sowmya",
+				salary:"20k",
+				designation:"developer",
+				address:"warangal",
+				mobile:"987654321"
+			},			
+			{
+				id:3,
+				name:"srikanth",
+				salary:"20k",
+				designation:"developer",
+				address:"prudutur",
+				mobile:"234567890"
+			},
+			{
+				id:4,
+				name:"ravindra",
+				salary:"20k",
+				designation:"developer",
+				address:"pulivendula",
+				mobile:"6637278292"
+			},
+			{
+				id:5,
+				name:"kalpana",
+				salary:"20k",
+				designation:"developer",
+				address:"gachibowli",
+				mobile:"5555666677"
+			},
+			{
+				id:6,
+				name:"surya",
+				salary:"20k",
+				designation:"developer",
+				address:"hyderbad",
+				mobile:"123456789"
+			},
+			{
+				id:7,
+				name:"manmohan",
+				salary:"20k",
+				designation:"developer",
+				address:"karim nagar",
+				mobile:"8888888888"
+			}
+];
+
+		
+	
+
+		var tableE=document.getElementById("empinfo");
+		var id=location.hash.split("#")[1];
+		var foundEmployee = employeeList.find(function(oEmployee)
+		{
+			return(oEmployee.id == id)
+		});
+		
+		
+		var rowE=document.createElement("tr");
+
+		var idE = document.createElement("td");
+		idE.innerHTML=""+foundEmployee.id;
+
+		var nameE = document.createElement("td");
+		nameE.innerHTML=foundEmployeeE.name;
+
+		var salaryE = document.createElement("td");
+		salaryE.innerHTML=foundEmployee.salary;
+
+		var designationE = document.createElement("td");
+		designationE.innerHTML=foundEmployee.designation;
+
+		
+		var addressE = document.createElement("td");
+		designationE.innerHTML=foundEmployee.address;
+
+		var mobileE = document.createElement("td");
+		mobileE.innerHTML=foundEmployee.mobile;
+
+		var rowE=document.createElement("tr");
+		rowE.appendChild(idE);
+		rowE.appendChild(nameE);
+		rowE.appendChild(salaryE);
+		rowE.appendChild(designationE);
+		rowE.appendChild(addressE);
+		rowE.appendChild(mobileE);
+
+		var tableE=document.getElementById("empinfo");
+		tableE.appendChild(rowE);
+	</script>
+
+	</table>
+		
+</body>
+</html>

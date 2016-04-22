@@ -1,0 +1,33 @@
+body
+{
+background-color:blue;
+}
+
+strong
+{
+padding-left:20px;
+font-size:40px;
+color:black;
+}
+.cool {
+
+border: 2px solid black;
+height:200px;
+width:1350px;
+background-color: #b7d3e3;
+}
+#hot {
+
+background-color: #bcbcf2;
+border:2px solid black;
+height:400px;
+width:1350px;
+}
+input
+{
+float:right;
+}
+#jk
+{
+float:left;
+}
