@@ -1,0 +1,44 @@
+<html>
+    <head>
+
+    </head>
+   
+    <body>
+ <script>
+var birthDay= new Date(1993,2,12,15,25,20);
+document.write("Birthday is .. "+birthday);
+document.write("<br>");
+
+document.write("Year is .. "+birthDay.getMonth());
+document.write("<br>");
+
+
+birthDay,setMonth(5);
+document.write("Year is .. "+birthday.getYear());
+document.write("<br>");
+
+document.write("Month is .. "+birthday.valueOf());
+document.write("<br>");
+
+// set value  December 14,1993
+var myDay="12/2/93";
+// convert it to milliseconds
+var converted=Date.parse(myDay);
+//create a new Date object
+var myDate= new Date(converted);
+//output the date
+document.write("Date is .. "+myDate);
+</script>
+
+
+
+
+
+
+
+
+  
+        
+    </body>
+
+</html>
