@@ -1,8 +1,24 @@
-body
+#abc
 {
-background-color:blue;
+background-color:#b7d3e3;
 }
-
+p
+{
+color:black;
+font-size:100px;
+}
+#def
+{
+height:50px;
+width:150px;
+font-size:30px;
+float:right;
+}
+#bodyE
+{
+background-color:#b7d3e3;
+color:black;
+}
 strong
 {
 padding-left:20px;
@@ -17,8 +33,7 @@ width:1350px;
 background-color: #b7d3e3;
 }
 #hot {
-
-background-color: #bcbcf2;
+background-color: #3bf7d1;
 border:2px solid black;
 height:400px;
 width:1350px;
@@ -30,4 +45,14 @@ float:right;
 #jk
 {
 float:left;
+}
+#empinfo
+{
+background-color:#ff7b9c;
+color:#3b2242;
+font-size:40px;
+}
+#xyz
+{
+background-color:#fff9c5;
 }

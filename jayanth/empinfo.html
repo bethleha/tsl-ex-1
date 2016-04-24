@@ -1,14 +1,10 @@
 <html>
 <head>
 <title> Employee details </title>
+<link rel="stylesheet" type="text/css" href="employeelogin.css">
 </head>
-<body>
-
-
-	<script>
-
-		
-	<table id="empinfo" border="1">
+<body id="xyz">
+	<table align="center" id="empinfo" border="1">
 		<tr>
 			<th>id</th>
 			<th>name</th>
@@ -19,7 +15,9 @@
 		</tr>	
 
 
-		var employeeList=[
+	</table>
+
+	<script src="test.js">var employeeList=[
 			{
 				id:1,
 				name:"jayanth",
@@ -88,10 +86,9 @@
 		{
 			return(oEmployee.id == id)
 		});
-		
+
 		
 		var rowE=document.createElement("tr");
-
 		var idE = document.createElement("td");
 		idE.innerHTML=""+foundEmployee.id;
 
@@ -106,7 +103,7 @@
 
 		
 		var addressE = document.createElement("td");
-		designationE.innerHTML=foundEmployee.address;
+		addressE.innerHTML=foundEmployee.address;
 
 		var mobileE = document.createElement("td");
 		mobileE.innerHTML=foundEmployee.mobile;
@@ -121,9 +118,8 @@
 
 		var tableE=document.getElementById("empinfo");
 		tableE.appendChild(rowE);
-	</script>
 
-	</table>
 		
+</script>		
 </body>
 </html>
