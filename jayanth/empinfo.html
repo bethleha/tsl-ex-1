@@ -4,7 +4,7 @@
 <link rel="stylesheet" type="text/css" href="employeelogin.css">
 </head>
 <body id="xyz">
-	<table align="center" id="empinfo" border="1">
+	<table id="empinfo" align="center" border="1">
 		<tr>
 			<th>id</th>
 			<th>name</th>
@@ -17,7 +17,8 @@
 
 	</table>
 
-	<script src="test.js">var employeeList=[
+	<script>
+		var employeeList=[
 			{
 				id:1,
 				name:"jayanth",
@@ -93,7 +94,7 @@
 		idE.innerHTML=""+foundEmployee.id;
 
 		var nameE = document.createElement("td");
-		nameE.innerHTML=foundEmployeeE.name;
+		nameE.innerHTML=foundEmployee.name;
 
 		var salaryE = document.createElement("td");
 		salaryE.innerHTML=foundEmployee.salary;
