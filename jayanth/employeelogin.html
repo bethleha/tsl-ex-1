@@ -1,0 +1,45 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="employeelogin.css">
+	<title>login</title>
+</head>
+<body>
+	<script>
+		function login () {
+			location.href="employeeList.html";
+		}
+		function reset () {
+			location.href="employeelogin.html";
+		}
+		function create () {
+			location.href="create.html";
+		}
+	</script>
+	
+<div class="cool"><br><strong>LOGIN</strong><table align="center">
+	
+	<tr><td> Username:<input type="text" name="username" size="15"
+	maxlength="30" /><br/></td></tr>
+	<tr><td> Password:<input type="password" name="password" size="15"
+	maxlength="30" /></td></tr>
+	<tr><td>  <input type="reset" value="reset" onclick="reset()"/><input type="submit" value="login" onclick="login()"/></td></tr>
+	
+</table></div>
+<div id="hot"><br><strong>Create an Account</strong>
+<table align="center">
+	 
+	<tr><td id="jk"> firstname:<input  type="text"  size="10"/><br/></td><td id="jk"> lastname:<input  type="text"  size="10"  /></td></tr>
+
+<tr><td>emailid:<input type="text"  size="45"
+	maxlength="40" /></td></tr>
+<tr><td> enter password:<input type="text"  size="45"
+	maxlength="40" /></td></tr>
+<tr><td> confirm password:<input type="text"  size="45"
+	maxlength="50" /></td></tr>
+
+
+<br><br><tr><td> <input type="submit" value="create account" onclick="create()"/> 
+</table>
+</div>
+</body>
+</html>
