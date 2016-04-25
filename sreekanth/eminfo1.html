@@ -1,0 +1,130 @@
+<html>
+<head>
+<title> Employee details </title>
+<link rel="stylesheet" type="text/css" href="elist.css">
+</head>
+<body id="aaa">
+
+	<table id="empinfo" align="center" border="1">
+		<tr>
+			<th>id</th>
+			<th>name</th>
+			<th>salary</th>
+			<th>designation</th>
+			<th>address</th>
+			<th>mobile</th>
+		</tr>	
+
+
+	</table>
+
+	<script>
+function logout()
+{
+location.href="emplogin1.html";
+}
+function back()
+{
+location.href="emlist1.html";
+}
+		var employeeList=[
+			{
+				id:1,
+				name:"sreekanth",
+				salary:"20k",
+				designation:"developer",
+				address:"proddatur",
+				mobile:"7396262471"
+				
+			},			
+			{
+				id:2,
+				name:"sowmya",
+				salary:"20k",
+				designation:"developer",
+				address:"warangal",
+				mobile:"987654321"
+			},			
+			{
+				id:3,
+				name:"raveendra",
+				salary:"20k",
+				designation:"developer",
+				address:"pulivendula",
+				mobile:"9550511551"
+			},
+			{
+				id:4,
+				name:"jayanth",
+				salary:"20k",
+				designation:"developer",
+				address:"bangulore",
+				mobile:"9194567898"
+			},
+			{
+				id:5,
+				name:"kalpana",
+				salary:"20k",
+				designation:"developer",
+				address:"lingampalli",
+				mobile:"9492086677"
+			},
+			{
+				id:6,
+				name:"surya",
+				salary:"20k",
+				designation:"developer",
+				address:"hyderbad",
+				mobile:"9194556789"
+			},
+			{
+				id:7,
+				name:"manmohan",
+				salary:"20k",
+				designation:"developer",
+				address:"karim nagar",
+				mobile:"9496769028"
+			}
+];
+		
+	
+		var tableE=document.getElementById("empinfo");
+		var id=location.hash.split("#")[1];
+		var foundEmployee = employeeList.find(function(oEmployee)
+		{
+			return(oEmployee.id == id)
+		});
+		
+		var rowE=document.createElement("tr");
+		var idE = document.createElement("td");
+		idE.innerHTML=""+foundEmployee.id;
+		var nameE = document.createElement("td");
+		nameE.innerHTML=foundEmployee.name;
+		var salaryE = document.createElement("td");
+		salaryE.innerHTML=foundEmployee.salary;
+		var designationE = document.createElement("td");
+		designationE.innerHTML=foundEmployee.designation;
+		
+		var addressE = document.createElement("td");
+		addressE.innerHTML=foundEmployee.address;
+		var mobileE = document.createElement("td");
+		mobileE.innerHTML=foundEmployee.mobile;
+		var rowE=document.createElement("tr");
+		rowE.appendChild(idE);
+		rowE.appendChild(nameE);
+		rowE.appendChild(salaryE);
+		rowE.appendChild(designationE);
+		rowE.appendChild(addressE);
+		rowE.appendChild(mobileE);
+		var tableE=document.getElementById("empinfo");
+		tableE.appendChild(rowE);
+		
+</script>
+<table align="right">
+<td><input type="reset" value="logout" onclick="logout()"/></td>
+</table>
+<table align="center">
+<td><input type="reset" value="back" onclick="back()"/></td>
+</table>		
+</body>
+</html>
