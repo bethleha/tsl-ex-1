@@ -1,0 +1,69 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="employeelogin.css">
+	
+</head>
+	
+<body id="bodyE">
+<script>function logout () {
+			location.href="employeelogin.html";
+		}
+		
+	// !. Deifne Model
+	// 2. Prepare a employee list DOM
+    var employeeList, tableE, rowE, idE, nameE, nameAnchorE;
+	employeeList = [
+	 	{
+	 		id: 1,
+	 		name: "Jayanth"
+	 	},
+	 	{
+	 		id: 2,
+	 		name: "Sowmya"
+	 	},
+	 	{
+	 		id: 3,
+	 		name: "Sreekanth"
+	 	},
+	 	{
+	 		id: 4,
+	 		name: "Raveendra"
+	 	},
+	 	{
+	 		id: 5,
+	 		name: "Kalpana"
+	 	},
+		{	id:6,
+			name: "Surya"
+		},
+		{	id:7,
+			name:"Manamohan"
+		}
+	];
+	tableE = document.createElement("table");
+	tableE.align = "center";
+	employeeList.forEach (function(oEmployee) // Here oElement was used: Wrong identifier usage. 
+	{
+		rowE = document.createElement("tr");
+		idE = document.createElement("td");
+		idE.innerHTML = oEmployee.id;
+
+		nameE = document.createElement("td");
+		nameAnchorE=document.createElement("a");
+		nameAnchorE.innerHTML=oEmployee.name;
+		nameAnchorE.href="empinfo.html#"+oEmployee.id;
+		nameE.appendChild(nameAnchorE);
+
+		
+		rowE.appendChild(idE);
+		rowE.appendChild(nameE);
+		tableE.appendChild(rowE);
+	})
+   
+	bodyE = document.getElementById("bodyE");
+	bodyE.appendChild(tableE);
+</script>
+
+<input type="submit" value="log out" onclick="logout()"/>
+</body>
+</html>
