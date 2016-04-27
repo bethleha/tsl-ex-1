@@ -1,0 +1,62 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<title>login</title>
+</head>
+<body>
+	<section id="loginSec">
+		<script>
+			function login () {
+				location.href="#/empList";
+				
+			}
+			function reset () {
+				location.href="index.html";
+				
+			}
+			
+		</script>
+	
+		<div class="login"><br><strong>LOGIN</strong>
+		<table align="center">
+		<tr><td> Username:</td><td><input type="text" name="username" size="15"maxlength="30" /></td></tr>
+		<tr><td> Password:</td><td><input type="password" name="password" size="15"maxlength="30" /></td></tr>
+		<tr><td></td><td> <input type="submit" value="login" onclick="login()"/> <input  type="reset" value="reset" onclick="reset()"/></td></tr>
+		</table></div>
+		<div id="signup"><br><strong>Create an Account</strong>
+		<table align="center">
+	 	<tr><td> Firstname:</td><td><input  type="text"  size="30"/></td></tr>
+		<tr><td> Lastname:</td><td><input  type="text"  size="30"  /></td></tr>
+		<tr><td>Emailid:</td><td><input type="text"  size="30"maxlength="40" /></td></tr>
+		<tr><td> Enter Password:</td><td><input type="text"  size="30"maxlength="40" /></td></tr>
+		<tr><td> Confirm Password:</td><td><input type="text"  size="30"maxlength="50" /></td></tr>
+		<tr><td></td><td> <input  type="submit" value="Submit" onclick="login()"/> </td></tr>
+		</table>
+		</div>
+	</section>
+	
+	<section id="empListSec">
+	<input id="button1" type="submit" value="logout" onclick="reset()"/> 
+	</section>
+
+	<section id="empInfoSec">
+		<input id="backbutton" type="submit" value="<<Back" onclick="login()"/> 
+		<input id="button" type="submit" value="logout" onclick="reset()"/> 
+
+		<table id="empinfo" align="center" border="1">
+		<tr>
+			<th>Id</th>
+			<th>Name</th>
+			<th>Salary</th>
+			<th>Designation</th>
+			<th>Address</th>
+			<th>Mobile</th>
+		</tr>	
+	</table>
+	</section>
+
+	<script src="app.js"></script>
+
+
+</body>
+</html>
